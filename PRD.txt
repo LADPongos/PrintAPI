@@ -1,5 +1,5 @@
 FastAPI Project Name: PrintAPI
-GitHub URL: https://github.com/LADPongos/PrintAPI.git
+GitHub URL: https://github.com/LADPongos/PrintAPI
 ==================================================================================================================================
 Product Requirements Document: PrintAPI
 ----------------------------------------------------------------------------------------------------------------------------------
