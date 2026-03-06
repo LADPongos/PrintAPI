@@ -1,0 +1,62 @@
+FastAPI Project Name: PrintAPI
+GitHub URL: https://github.com/LADPongos/PrintAPI.git
+==================================================================================================================================
+Product Requirements Document: PrintAPI
+----------------------------------------------------------------------------------------------------------------------------------
+1. PROJECT OVERVIEW:
+This project is purely a FastAPI application designed to handle the print shop processes. This project will replace the manual process of managing print orders by providing a FastAPI service that will automatically make print orders, calculation of order cost based on page type [Black & White: PHP 2.00, Colored: PHP 5.00, Photo Paper: PHP 20.00], and tracking every print orders [Queued, Processed, Complete].
+----------------------------------------------------------------------------------------------------------------------------------
+2. PROBLEM STATEMENT:
+Currently, the client faces three problems with the current manual process:
+-> The client manually lists each print order using pen and paper.
+-> The client makes computational errors when calculating print order cost, since computation is done by pen and paper.
+-> The client either makes duplicate orders or forgets to record orders causing the client to lose money.
+----------------------------------------------------------------------------------------------------------------------------------
+3. OBJECTIVE:
+The objective of this FastAPI application is to:
+-> Accept printing orders and record them automatically
+-> Computes the total cost of each orders automatically
+-> Allow to track order record and access its information
+----------------------------------------------------------------------------------------------------------------------------------
+4. USERS:
+The users of this FastAPI application are:
+-> Print Shop Owner
+-> Print Shop Manager
+-> Print Shop Customers
+----------------------------------------------------------------------------------------------------------------------------------
+5. FUNCTIONAL REQUIREMENTS:
+Project Features:
+-> Must accept print orders
+-> Must be able to view print orders
+-> Must be able to calculate the total cost of the order
+-> Must be able to record orders
+----------------------------------------------------------------------------------------------------------------------------------
+6. NON-FUNCTIONAL REQUIREMENTS:
+Performance:
+-> Endpoints must respond within 3 seconds
+Usability:
+-> Endpoints must display clear messages when an input is entered
+Constraints:
+-> No Database
+-> Purely FastAPI
+----------------------------------------------------------------------------------------------------------------------------------
+7. DATA MODEL:
+The Project will use a key-value pair. The following pairs will be used by this project:
+order_id: str
+item: List[]
+customer_name: str
+document_name: str
+number_of_pages: int
+copies_per_page: int
+page_type: str
+total_cost: float
+status: str 
+----------------------------------------------------------------------------------------------------------------------------------
+8. PROPOSED API ENDPOINTS:
+-> GET /
+-> GET /orders
+-> GET /orders/{order_id}
+-> POST /orders
+-> DELETE /orders
+-> DELETE /orders/{order_id}
+-> PUT /orders/{order_id}/complete
