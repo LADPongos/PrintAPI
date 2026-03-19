@@ -105,3 +105,33 @@ Visit [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) for the interacti
 | `page_type`       | str   | `black_and_white`, `colored`, or `photo_paper` |
 | `total_cost`      | float | Auto-calculated total (PHP)                    |
 | `status`          | str   | `Queued`, `Processed`, or `Complete`           |
+
+## Terminal Based Client
+
+### 1. Run Python File
+
+```
+python client_terminal.py
+```
+
+### 2. Enter the following commands
+
+```
+0 | cls | clear
+
+1 | exit
+
+2 | get_commands | help
+
+3 | get_all_orders
+
+4 | get_order_by_id
+
+5 | create_order
+
+6 | delete_all_orders
+
+7 | delete_order_by_id
+
+8 | complete_an_orde
+```
